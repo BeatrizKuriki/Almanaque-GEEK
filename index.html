@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Almanaque Geek</title>
+  </head>
+  <body>
+  
+    <header>
+      <h1>Almanaque Geek</h1>
+      <p>todos os seus personagens em um só lugar</p>
+    </header>
+  
+    <main data-churros="doce de leite">
+
+      <form class="register__form">
+        <h2>Cadastrar personagem</h2>
+        <input class="register__input" type="text" name="name" placeholder="Nome do personagem">
+        <input class="register__input" type="text" name="from" placeholder="De qual obra é este personagem?">
+        <textarea class="register__input" name="description" id="description" cols="30" rows="10"  placeholder="Conte mais sobre este personagem"></textarea>
+        <input class="register__input" type="text" name="image" placeholder="Forneça um link de imagem deste personagem">
+        <select class="register__input" name="type" id="type">
+          <option value="">Escolha uma categoria</option>
+          <option value="serie">Séries</option>
+          <option value="anime">Animes</option>
+          <option value="other">Outros</option>
+        </select>
+        <button id="submitButton" class="card__button" type="submit">cadastrar</button>
+      </form>
+
+      <section class="list__container">
+        <h2>Séries: </h2>
+        <ul class="series__list">
+           <!-- <li class="card__container">
+            <img src="https://imgs.search.brave.com/z0aH-a-rbSHNmi3CUjU2mpcgpRWVssr8PIdt1pLvjdg/rs:fit:670:893:1/g:ce/aHR0cDovL2ltZzMu/d2lraWEubm9jb29r/aWUubmV0L19fY2Iy/MDEzMDMwMjIzNDUw/Ny9wX18vcHJvdGFn/b25pc3QvaW1hZ2Vz/LzcvNzgvRGVhbl9X/aW5jaGVzdGVyLmpw/Zw" alt="Dean Winchester">
+            <h2 class="card__name">Dean Winchester</h2>
+            <p class="card__from">Supernatural</p>
+            <button class="card__button">Saiba mais</button>
+          </li>  -->
+  
+        </ul>
+      </section>
+      <section class="list__container">
+        <h2>Animes: </h2>
+        <ul class="animes__list">
+  
+        </ul>
+      </section>
+      <section class="list__container">
+        <h2>Outros: </h2>
+        <ul class="others__list"></ul>
+      </section>
+  
+      <dialog class="modal__container"></dialog>
+    </main>
+    
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>

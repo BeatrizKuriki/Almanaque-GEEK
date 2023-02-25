@@ -1,0 +1,161 @@
+header{
+    background-color: var(--blue-500);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+header >p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.register__form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.register__form >h2{
+    font-size: 2rem;
+}
+
+.register__input{
+    width: 80%;
+    padding: 0.5rem 1rem;
+}
+
+.register__form > textarea{
+    resize: none;
+}
+
+.register__form > select{
+    width: 50%;
+}
+
+
+.list__container{
+    margin: 2rem auto;
+    max-width: 90%;   
+    padding: 1rem;
+
+}
+
+.list__container >h2{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.list__container > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card__container{
+    border: 1px solid var(--grey-100);
+    border-radius:8px ;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: var(--blue-700);
+
+}
+
+.card__container>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+.card__name{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card__button{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--blue-500);
+    background-color: var(--grey-100);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.modal__container{
+    border: none;
+    border-radius: 8px;
+    width: 800px;
+    max-width: 90%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal__container>div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.modal__container>div>img{
+    width: 200px;
+
+}
+
+.modal__container>div>h2{
+    font-size: 3rem;
+}
+
+.modal__description{
+    font-size: 1rem;
+    line-height: 150%;
+    width: 90%;
+}
+
+.modal__subtitle{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.modal__btn{
+    padding: 1rem;
+    border: 1px solid var(--blue-500);
+    border-radius: 8px;
+    background-color: var(--grey-100);
+    cursor: pointer;
+}
+
+@media(min-width: 769px){
+    .list__container>ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card__container{
+        width: 300px;
+        height: auto;
+    }
+}
