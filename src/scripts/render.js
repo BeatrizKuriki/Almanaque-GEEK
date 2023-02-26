@@ -1,3 +1,5 @@
+import { closeModal, createModal } from "./modal.js"
+
 export function render(array){
     const seriesUl = document.querySelector('.series__list')
 
@@ -20,6 +22,8 @@ export function render(array){
             othersUl.appendChild(card)
         }
     })
+
+   
 
 }
 
@@ -51,3 +55,24 @@ function createCard(character){
 
     return cardContainer
 }
+
+export function renderModal(array) {
+    const modal = document.querySelector('.modal__container')
+    const buttons = document.querySelectorAll('.card__button')
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // console.log(typeof button.dataset.characterId)
+  
+        const modalContent = createModal(button.dataset.characterId, array)
+  
+        modal.innerHTML = ''
+  
+        modal.appendChild(modalContent)
+  
+        modal.showModal()
+  
+        closeModal()
+      })
+    })
+  }
