@@ -23,7 +23,7 @@ export function render(array){
         }
     })
 
-   
+    renderModal(array)
 
 }
 
