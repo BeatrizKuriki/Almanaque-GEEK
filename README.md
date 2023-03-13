@@ -7,7 +7,7 @@ Projeto criado em uma das aulas da Kenzie Academy</h1>
 <br>
 
 <p>Imagem 1: Desktop</p>
-<p align="center"><img src="" width:1000></p>
+<p align="center"><img src="https://beatrizkuriki.github.io/Almanaque-GEEK/" width:1000></p>
 
 <br>
 <h2 align="center">:hourglass: Status do projeto </h2>
